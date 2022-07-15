@@ -65,6 +65,25 @@
         :text="studies.dotnet.text"
         :image="studies.dotnet.image"
       />
+
+      <StudiesCard
+        :title="studies.nuxt.title"
+        :subtitle="studies.nuxt.subtitle"
+        :text="studies.nuxt.text"
+        :image="studies.nuxt.image"
+      />
+
+      <v-col cols="12" class="text-center">
+        <v-btn 
+        outlined 
+        elevation="2" 
+        color="#40e5a1" 
+        to="/skills" 
+        router 
+        exact
+        >more information</v-btn
+        >
+      </v-col>
     </v-row>
   </v-container>
 </template>
@@ -92,6 +111,12 @@ export default {
           subtitle: "Platzi 2022",
           text: "Efficient framework, created by Microsoft, for modern software development with languages ​​like C# based on the Object Orientation paradigm.",
           image: "/studies/dotnet/principal.png",
+        },
+        nuxt: {
+          title: "NUXT JS",
+          subtitle: "Platzi 2022",
+          text: "Nuxt.js is a free and open source JavaScript library based on Vue.js, Node.js, Webpack and Babel.js. This website is made in this technology",
+          image: "/studies/nuxt/principal.png",
         },
       },
     };

@@ -1,9 +1,9 @@
 <template>
-  <v-container>
+  <v-container class="my-4">
     <v-row>
-      <v-card class="d-flex" elevation="3">
-        <v-col cols="12" md="8">
-          <v-card-title>{{ title }}</v-card-title>
+      <v-card class="d-flex justify-content-between" elevation="3">
+        <v-col cols="12" md="8" class="py-0">
+          <v-card-title >{{ title }}</v-card-title>
           <v-card-subtitle>{{ subtitle }}</v-card-subtitle>
           <v-card-text>{{ text }}</v-card-text>
         </v-col>

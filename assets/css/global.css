@@ -1,0 +1,19 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-color__primary{
+    color: #40e5a1;
+}
+
+.v-main__wrap{
+    background: black;
+}
+
+.v-navigation-drawer__content{
+    background: #272727;
+}
+
+.theme--dark.v-list-item--active:hover::before, .theme--dark.v-list-item--active::before{
+    background-color: #40e5a1;
+}

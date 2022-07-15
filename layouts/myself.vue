@@ -59,36 +59,25 @@
         </v-row>
       </v-col>
 
-      <v-container>
-        <v-row>
-          <v-card class="d-flex" elevation="3">
-            <v-col cols="12" md="8">
-              <v-card-title>Backend with C# and .NET</v-card-title>
-              <v-card-subtitle>Platzi 2022</v-card-subtitle>
-              <v-card-text
-                >Efficient framework, created by Microsoft, for modern software
-                development with languages ​​like C# based on the Object
-                Orientation paradigm.</v-card-text
-              >
-            </v-col>
-            <v-spacer />
-            <v-col cols="12" md="3" class="pa-0 d-flex align-items-center">
-              <v-img src="/studies/dotnet/principal.png"></v-img>
-            </v-col>
-          </v-card>
-        </v-row>
-      </v-container>
+      <StudiesCard
+        :title="studies.dotnet.title"
+        :subtitle="studies.dotnet.subtitle"
+        :text="studies.dotnet.text"
+        :image="studies.dotnet.image"
+      />
     </v-row>
   </v-container>
 </template>
 
 <script>
 import StudieProgressBar from "../components/StudieProgressBar.vue";
+import StudiesCard from "../components/StudiesCard.vue";
 
 export default {
   name: "myself",
   components: {
     StudieProgressBar,
+    StudiesCard,
   },
   data() {
     return {
@@ -97,6 +86,14 @@ export default {
       reactjs: 35,
       javascript: 80,
       english: 45,
+      studies: {
+        dotnet: {
+          title: "Backend with C# and .NET",
+          subtitle: "Platzi 2022",
+          text: "Efficient framework, created by Microsoft, for modern software development with languages ​​like C# based on the Object Orientation paradigm.",
+          image: "/studies/dotnet/principal.png",
+        },
+      },
     };
   },
 };

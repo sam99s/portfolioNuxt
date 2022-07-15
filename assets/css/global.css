@@ -17,3 +17,8 @@
 .theme--dark.v-list-item--active:hover::before, .theme--dark.v-list-item--active::before{
     background-color: #40e5a1;
 }
+
+h2{
+    color: #40e5a1;
+    font-size: 2.5em;
+}

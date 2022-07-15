@@ -44,7 +44,7 @@ export default {
 
 <style scoped>
 h1 {
-  font-size: 3em;
+  font-size: 3.3em;
 }
 
 .bg-sam {
@@ -56,7 +56,7 @@ h1 {
 }
 
 p {
-  font-size: 3.5em;
+  font-size: 2.5em;
   font-weight: 500;
 }
 </style>

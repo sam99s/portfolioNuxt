@@ -114,7 +114,7 @@ export default {
         },
         nuxt: {
           title: "NUXT JS",
-          subtitle: "Platzi 2022",
+          subtitle: "Platzi 2022 - 2023",
           text: "Nuxt.js is a free and open source JavaScript library based on Vue.js, Node.js, Webpack and Babel.js. This website is made in this technology",
           image: "/studies/nuxt/principal.png",
         },

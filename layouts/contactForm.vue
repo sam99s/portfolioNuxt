@@ -2,7 +2,7 @@
   <v-container>
     <h2 class="mb-5">Contact me</h2>
     <v-row>
-      <v-col cols="12" md="6">
+      <v-col md="6">
         <v-form
           ref="form"
           form="form"
@@ -78,8 +78,9 @@
           </v-col>
         </v-row>
       </v-col>
-
-      <v-col cols="12" md="6">MAPA</v-col>
+      <v-col cols="6" class="pb-16 pl-16">
+        <v-img src="/sam99sss.png" contain />
+      </v-col>
     </v-row>
   </v-container>
 </template>

@@ -73,7 +73,7 @@
         :image="studies.nuxt.image"
       />
 
-      <v-col cols="12" class="text-center">
+      <v-col cols="12" class="text-center" v-if="isHome">
         <v-btn 
         outlined 
         elevation="2" 
@@ -94,6 +94,12 @@ import StudiesCard from "../components/StudiesCard.vue";
 
 export default {
   name: "myself",
+  props: {
+    isHome: {
+      type: Boolean,
+      default: false
+    }
+  },
   components: {
     StudieProgressBar,
     StudiesCard,

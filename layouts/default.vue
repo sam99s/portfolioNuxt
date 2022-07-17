@@ -16,7 +16,13 @@
           exact
         >
           <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
+            <v-tooltip right v-if="miniVariant">
+              <template v-slot:activator="{ on, attrs }">
+                <v-icon v-bind="attrs" v-on="on">{{ item.icon }}</v-icon>
+              </template>
+              <span>{{ item.title }}</span>
+            </v-tooltip>
+            <v-icon v-else>{{ item.icon }}</v-icon>
           </v-list-item-action>
           <v-list-item-content>
             <v-list-item-title v-text="item.title" />

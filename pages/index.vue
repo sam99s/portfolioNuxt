@@ -2,7 +2,7 @@
   <v-container>
     <WallpaperSam />
     <Proyects />
-    <Myself />
+    <Myself :isHome="true"/>
     <ContactForm />
   </v-container>
 </template>

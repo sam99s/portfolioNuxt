@@ -93,7 +93,7 @@
             color="#40e5a1"
             elevation="2"
             @click="moreFlag = !moreFlag"
-            >More +</v-btn
+            >{{ showButton }}</v-btn
           >
         </v-col>
       </v-row>
@@ -106,9 +106,16 @@ import ProyectCard from "../components/ProyectCard.vue";
 export default {
   name: "Proyects",
   components: { ProyectCard },
+  watch: {
+    moreFlag() {
+      if (this.moreFlag) this.showButton = "Minus -";
+      else this.showButton = "More +";
+    },
+  },
 
   data: () => ({
     moreFlag: false,
+    showButton: "More +",
   }),
 };
 </script>

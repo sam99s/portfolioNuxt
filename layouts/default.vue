@@ -52,8 +52,26 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-footer :absolute="!fixed" app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+    <v-footer :absolute="fixed" app>
+      <v-col cols="3" class="pa-0">
+        <span>&copy; {{ new Date().getFullYear() }}</span>
+      </v-col>
+      <v-spacer />
+      <v-col cols="1" class="py-0 text-center">
+        <a href="https://github.com/sam99s" target="_blank"
+          ><v-icon color="#40e5a1">{{ footerIcons.GitHub }}</v-icon></a
+        >
+      </v-col>
+      <v-col cols="1" class="py-0 text-center">
+        <a href="https://www.linkedin.com/in/sam99s/" target="_blank"
+          ><v-icon color="#40e5a1">{{ footerIcons.LinkedIn }}</v-icon></a
+        >
+      </v-col>
+      <v-col cols="1" class="py-0 text-center">
+        <a href="https://www.instagram.com/samu_schulz/" target="_blank"
+          ><v-icon color="#40e5a1">{{ footerIcons.Instagram }}</v-icon></a
+        >
+      </v-col>
     </v-footer>
   </v-app>
 </template>
@@ -97,8 +115,17 @@ export default {
       right: true,
       rightDrawer: false,
       title: "Samuel Schulz - Full stack developer",
+      footerIcons: {
+        GitHub: "mdi-github",
+        LinkedIn: "mdi-linkedin",
+        Instagram: "mdi-instagram",
+      },
     };
   },
 };
 </script>
-s
+<style scoped>
+footer a {
+  text-decoration: none;
+}
+</style>

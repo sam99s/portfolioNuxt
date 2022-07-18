@@ -64,6 +64,7 @@
         :subtitle="studies.dotnet.subtitle"
         :text="studies.dotnet.text"
         :image="studies.dotnet.image"
+        v-if="isHome"
       />
 
       <StudiesCard
@@ -71,6 +72,7 @@
         :subtitle="studies.nuxt.subtitle"
         :text="studies.nuxt.text"
         :image="studies.nuxt.image"
+        v-if="isHome"
       />
 
       <v-col cols="12" class="text-center" v-if="isHome">

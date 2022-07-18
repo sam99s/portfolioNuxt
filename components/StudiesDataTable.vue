@@ -1,5 +1,11 @@
 <template>
-  <v-data-table :headers="headers" :items="items" class="elevation-1">
+  <v-data-table
+    :headers="headers"
+    :items="items"
+    class="elevation-1"
+    :hide-default-footer="true"
+    :items-per-page="100"
+  >
     <template v-slot:[`item.priorKnowledge`]="{ item }">
       <v-icon v-if="item.priorKnowledge" color="#40e5a1">{{ check }}</v-icon>
       <v-icon v-else color="orange">{{ noCheck }}</v-icon>

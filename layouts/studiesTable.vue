@@ -12,7 +12,7 @@
       </v-col>
       <v-row class="mt-5 text-center">
         <v-col cols="12" md="6">
-          <h3>previous studies</h3>
+          <h3>Previous studies</h3>
           <PreviousStudies :items="previousItems" />
         </v-col>
         <v-col cols="12" md="6">

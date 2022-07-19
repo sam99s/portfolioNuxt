@@ -103,7 +103,7 @@ export default {
         },
         {
           icon: "mdi-code-tags-check",
-          title: "Skills",
+          title: "Skills & tools",
           to: "/skills",
         },
         {

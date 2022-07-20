@@ -143,6 +143,31 @@
         :items="studies.dotnet.items"
         :institution="studies.dotnet.institution"
       />
+
+      <v-row class="my-5 pt-5">
+        <h3>VUE JS & NUXT JS</h3>
+        <v-col cols="12">
+          <p>
+            As my actuality weighs more on the .NET side, with NUXT JS I focus
+            on making websites like this portfolio. The truth is that it doesn't
+            cost me much, since I program about 6 hours a day in my work with
+            VUE JS. But the other reality is that there is always something new
+            to learn, and NUXT JS came for those reasons.
+          </p>
+        </v-col>
+        <StudiesCard
+          :title="studies.nuxt.title"
+          :subtitle="studies.nuxt.subtitle"
+          :text="studies.nuxt.text"
+          :image="studies.nuxt.image"
+        />
+        <v-col cols="12">
+          So far I have been reading the documentation and creating code.
+          However, I plan to take the courses at platzi at the end of the .NET
+          learning path. And since I can't miss the practice, I also plan to do
+          another E-commerce project with this tool.
+        </v-col>
+      </v-row>
     </v-container>
   </v-container>
 </template>
@@ -151,10 +176,11 @@
 import SplitCarousel from "../../components/SplitCarousel.vue";
 import SplitCarouselItem from "../../components/SplitCarouselItem.vue";
 import CurrentlyStudy from "../../layouts/currentlyStudy.vue";
+import StudiesCard from "../../components/StudiesCard.vue";
 // Documentation: https://github.com/Aaron00101010/vue-split-carousel/tree/1.x
 
 export default {
-  components: { SplitCarousel, SplitCarouselItem, CurrentlyStudy },
+  components: { SplitCarousel, SplitCarouselItem, CurrentlyStudy, StudiesCard },
   data() {
     return {
       items: [
@@ -400,7 +426,14 @@ export default {
           institution: {
             name: "Platzi",
             logo: "/platzi.png",
+            site: "https://platzi.com/p/Sam99s/",
           },
+        },
+        nuxt: {
+          title: "NUXT JS",
+          subtitle: "Platzi 2022 - 2023",
+          text: "Nuxt.js is a free and open source JavaScript library based on Vue.js, Node.js, Webpack and Babel.js. This website is made in this technology",
+          image: "/studies/nuxt/principal.png",
         },
       },
     };

@@ -31,7 +31,7 @@
       v-model="modalFlag"
       max-width="40%"
       @keydown.esc="modalFlag = false"
-      persistent
+      transition="dialog-bottom-transition"
     >
       <CertificateImageModal @close="modalFlag = false" :item="certificateItem"/>
     </v-dialog>

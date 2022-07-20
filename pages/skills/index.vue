@@ -168,6 +168,38 @@
           another E-commerce project with this tool.
         </v-col>
       </v-row>
+
+      <v-row>
+        <v-col cols="12">
+          <h3>English</h3>
+        </v-col>
+        <v-col cols="12">
+          <p>
+            Over the years I realized the importance of this language. In 2021 I
+            set myself the goal of speaking English fluently in 2023 and thus be
+            able to take that great leap on a personal level.
+          </p>
+        </v-col>
+        <v-col cols="12" md="6">
+          <v-progress-linear
+            v-model="studies.english.progress"
+            color="#FF7871"
+            height="18"
+          >
+            <template v-slot>
+              <strong>B1</strong>
+            </template>
+          </v-progress-linear>
+          <p class="pt-2"><strong>Objetive: </strong>IELTS</p>
+        </v-col>
+        <v-col cols="12" md="6">
+          <p>
+            B1 You're probably wondering, “How come this site is written in
+            English? Not only do I trust Google translate😁, but I also attended
+            a quadrilingual school.
+          </p>
+        </v-col>
+      </v-row>
     </v-container>
   </v-container>
 </template>
@@ -434,6 +466,10 @@ export default {
           subtitle: "Platzi 2022 - 2023",
           text: "Nuxt.js is a free and open source JavaScript library based on Vue.js, Node.js, Webpack and Babel.js. This website is made in this technology",
           image: "/studies/nuxt/principal.png",
+        },
+        english: {
+          title: "English",
+          progress: 35,
         },
       },
     };

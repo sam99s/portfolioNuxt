@@ -21,7 +21,10 @@
         <span v-else>{{ "" }}</span>
       </template>
       <template v-slot:[`item.link`]="{ item }">
-        <btn v-if="item.link" @click="openModal(item)"> View certificate </btn>
+        <btn v-if="item.link" @click="openModal(item)">
+          <v-icon size="1rem">{{ "mdi-cursor-default-click-outline" }}</v-icon>
+          View certificate
+        </btn>
         <span v-else>{{ "Soon" }}</span>
       </template>
     </v-data-table>
@@ -33,7 +36,10 @@
       @keydown.esc="modalFlag = false"
       transition="dialog-bottom-transition"
     >
-      <CertificateImageModal @close="modalFlag = false" :item="certificateItem"/>
+      <CertificateImageModal
+        @close="modalFlag = false"
+        :item="certificateItem"
+      />
     </v-dialog>
   </v-card>
 </template>
@@ -80,7 +86,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 btn {
   text-decoration: none;
   color: #40e5a1;
@@ -89,5 +95,15 @@ btn {
 btn:hover {
   color: #5dfaff;
   cursor: pointer;
+  @keyframes pulse {
+    from { transform: none; }
+    50% { transform: scale(1.4); }
+    to { transform: none; }
+}
+  i {
+    color: yellow;
+    animation: pulse 1.2s linear infinite;
+    transform-origin: center;
+  }
 }
 </style>

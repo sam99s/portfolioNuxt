@@ -21,7 +21,7 @@
         <span v-else>{{ "" }}</span>
       </template>
       <template v-slot:[`item.link`]="{ item }">
-        <a v-if="item.link" @click="openModal(item)"> View certificate </a>
+        <btn v-if="item.link" @click="openModal(item)"> View certificate </btn>
         <span v-else>{{ "Soon" }}</span>
       </template>
     </v-data-table>
@@ -81,12 +81,13 @@ export default {
 </script>
 
 <style scoped>
-a {
+btn {
   text-decoration: none;
   color: #40e5a1;
 }
 
-a:hover {
+btn:hover {
   color: #5dfaff;
+  cursor: pointer;
 }
 </style>

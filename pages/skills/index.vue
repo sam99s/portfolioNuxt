@@ -128,6 +128,7 @@
         </v-col>
       </v-row>
     </v-row>
+    <!-- currently studying -->
     <v-container class="my-8">
       <v-row>
         <v-col cols="12" class="text-center">
@@ -201,6 +202,8 @@
         </v-col>
       </v-row>
     </v-container>
+    <!-- Past Studies -->
+    <PastStudies />
   </v-container>
 </template>
 
@@ -209,10 +212,17 @@ import SplitCarousel from "../../components/SplitCarousel.vue";
 import SplitCarouselItem from "../../components/SplitCarouselItem.vue";
 import CurrentlyStudy from "../../layouts/currentlyStudy.vue";
 import StudiesCard from "../../components/StudiesCard.vue";
+import PastStudies from "../../layouts/pastStudies.vue";
 // Documentation: https://github.com/Aaron00101010/vue-split-carousel/tree/1.x
 
 export default {
-  components: { SplitCarousel, SplitCarouselItem, CurrentlyStudy, StudiesCard },
+  components: {
+    SplitCarousel,
+    SplitCarouselItem,
+    CurrentlyStudy,
+    StudiesCard,
+    PastStudies,
+  },
   data() {
     return {
       items: [

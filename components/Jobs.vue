@@ -1,5 +1,5 @@
 <template>
-  <v-row>
+  <v-row class="mb-8">
     <v-col cols="12">
       <h3>{{ title }}</h3>
       <span>{{ subtitle }}</span>
@@ -91,6 +91,7 @@ export default {
     },
     tasks: {
       type: Object,
+      required: true,
       default: null,
     },
     site: {

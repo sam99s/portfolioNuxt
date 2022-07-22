@@ -7,7 +7,7 @@
     </v-row>
     <v-row>
       <v-col cols="12">
-        <h4>Coderhouse - 2021</h4>
+        <h3>Coderhouse - 2021</h3>
       </v-col>
       <v-col cols="12" md="4" contain>
         <CardImage
@@ -38,28 +38,46 @@
         />
       </v-col>
     </v-row>
-    <!-- <v-row>
-      <v-col cols="12" md="6">
-        <v-carousel v-model="model" height="300px">
-          <v-carousel-item v-for="(color, i) in colors" :key="color">
-            <v-sheet :color="color" height="100%" tile>
-              <v-row class="fill-height" align="center" justify="center">
-                <div class="text-h2">Slide {{ i + 1 }}</div>
-              </v-row>
-            </v-sheet>
-          </v-carousel-item>
-        </v-carousel>
+    <v-row>
+      <v-col cols="12">
+        <h3>Platzi - 2020</h3>
       </v-col>
-    </v-row> -->
+    </v-row>
+    <v-container>
+      <v-row>
+        <v-col>
+          <h4>Web development</h4>
+        </v-col>
+      </v-row>
+      <ExhibitionTitlesPlatzi
+        :titles="platzi.certificates.pdw2020"
+        :text1="platzi.text.pdw2020.text1"
+        :text2="platzi.text.pdw2020.text2"
+        :text3="platzi.text.pdw2020.text3"
+        :showButtons="true"
+      />
+      <v-row>
+        <v-col>
+          <h4>JavaScript developer</h4>
+        </v-col>
+      </v-row>
+      <ExhibitionTitlesPlatzi
+        :titles="platzi.certificates.pjs2020"
+        :text1="platzi.text.pjs2020.text1"
+        :text2="platzi.text.pjs2020.text2"
+        :text3="platzi.text.pjs2020.text3"
+        :showContactButton="true"
+      />
+    </v-container>
   </v-container>
 </template>
 
 <script>
 import CardImage from "../components/CardImage.vue";
+import ExhibitionTitlesPlatzi from "../components/ExhibitionTitlesPlatzi.vue";
 export default {
+  components: { CardImage, ExhibitionTitlesPlatzi },
   data: () => ({
-    model: 0,
-    colors: ["primary", "secondary", "yellow darken-2", "red", "orange"],
     coderhouse: {
       dw: {
         img: "/coderhouse/dwCoderhouse.png",
@@ -96,8 +114,145 @@ export default {
           "I was able to achieve the React JS title at the end of September 2021, with a grade of 10 and finishing first in the ranking of the course carried out at the Coderhouse academy. It brought me a lot of happiness, as it tried the best of me on the Front side and made me interact with the databases in a very precise way so that everything works correctly.",
       },
     },
+    platzi: {
+      certificates: {
+        pdw2020: [
+          {
+            id: "1p2020",
+            url: "/platzi2020/desarrolloWeb/basicEngineerSoftware.png",
+          },
+          {
+            id: "2p2020",
+            url: "/platzi2020/desarrolloWeb/designSystem.png",
+          },
+          {
+            id: "3p2020",
+            url: "/platzi2020/desarrolloWeb/devtools.png",
+          },
+          {
+            id: "4p2020",
+            url: "/platzi2020/desarrolloWeb/frontend.png",
+          },
+          {
+            id: "5p2020",
+            url: "/platzi2020/desarrolloWeb/frontendDev.png",
+          },
+          {
+            id: "6p2020",
+            url: "/platzi2020/desarrolloWeb/gitAndGitHub.png",
+          },
+          {
+            id: "7p2020",
+            url: "/platzi2020/desarrolloWeb/gridLayout.png",
+          },
+          {
+            id: "8p2020",
+            url: "/platzi2020/desarrolloWeb/htmlPractic.png",
+          },
+          {
+            id: "9p2020",
+            url: "/platzi2020/desarrolloWeb/packageNpm.png",
+          },
+          {
+            id: "10p2020",
+            url: "/platzi2020/desarrolloWeb/responsiveMobile.png",
+          },
+          {
+            id: "11p2020",
+            url: "/platzi2020/desarrolloWeb/responsiveWeb.png",
+          },
+          {
+            id: "12p2020",
+            url: "/platzi2020/desarrolloWeb/sassCourse.png",
+          },
+          {
+            id: "13p2020",
+            url: "/platzi2020/desarrolloWeb/terminalCourse.png",
+          },
+          {
+            id: "14p2020",
+            url: "/platzi2020/desarrolloWeb/v8engine.png",
+          },
+          {
+            id: "15p2020",
+            url: "/platzi2020/desarrolloWeb/webDevelopment.png",
+          },
+          {
+            id: "16p2020",
+            url: "/platzi2020/desarrolloWeb/webDevelopmentPro.png",
+          },
+        ],
+        pjs2020: [
+          {
+            id: "1p2020",
+            url: "/platzi2020/javascriptDev/asincronismo.png",
+          },
+          {
+            id: "2p2020",
+            url: "/platzi2020/javascriptDev/baseJs.png",
+          },
+          {
+            id: "3p2020",
+            url: "/platzi2020/javascriptDev/basicsJs.png",
+          },
+          {
+            id: "4p2020",
+            url: "/platzi2020/javascriptDev/dataStructure.png",
+          },
+          {
+            id: "5p2020",
+            url: "/platzi2020/javascriptDev/ecma6.png",
+          },
+          {
+            id: "6p2020",
+            url: "/platzi2020/javascriptDev/frontendDev.png",
+          },
+          {
+            id: "7p2020",
+            url: "/platzi2020/javascriptDev/jQuery.png",
+          },
+          {
+            id: "8p2020",
+            url: "/platzi2020/javascriptDev/prework.png",
+          },
+          {
+            id: "9p2020",
+            url: "/platzi2020/javascriptDev/preworkWindows.png",
+          },
+          {
+            id: "10p2020",
+            url: "/platzi2020/javascriptDev/scopeJs.png",
+          },
+          {
+            id: "11p2020",
+            url: "/platzi2020/javascriptDev/spaJs.png",
+          },
+          {
+            id: "12p2020",
+            url: "/platzi2020/javascriptDev/spappJs.png",
+          },
+        ],
+      },
+      text: {
+        pdw2020: {
+          text1:
+            'While working in the field of sales, I decided to sign up for Platzi. From the first day I have maintained the motto of "Never stop learning" and every day my brain applies it.',
+          text2:
+            "I started in Web Development school. Obtaining a wide range of knowledge that I was able to apply instantly. Within a few months this had its fruits since I began to have my first personal projects and I also began to venture into the world of work.",
+          text3:
+            "To this day I follow one of the greatest pieces of advice that a great colleague gave me and that is to start. One can plan many things, but the world of IT is so amazing that plans can change in a matter of seconds. If this is your case, you can start with a free month in said academy and you will see the gratitude you will feel in a few months for having made the decision.",
+        },
+        pjs2020: {
+          text1:
+            'While working in the field of sales, I decided to sign up for Platzi. From the first day I have maintained the motto of "Never stop learning" and every day my brain applies it.',
+          text2:
+            "I started in Web Development school. Obtaining a wide range of knowledge that I was able to apply instantly. Within a few months this had its fruits since I began to have my first personal projects and I also began to venture into the world of work.",
+          text3:
+            "To this day I follow one of the greatest pieces of advice that a great colleague gave me and that is to start. One can plan many things, but the world of IT is so amazing that plans can change in a matter of seconds. If this is your case, you can start with a free month in said academy and you will see the gratitude you will feel in a few months for having made the decision.",
+        },
+      },
+    },
   }),
-  components: { CardImage },
 };
 </script>
 

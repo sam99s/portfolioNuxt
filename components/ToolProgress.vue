@@ -21,10 +21,10 @@
         <span v-else>{{ "" }}</span>
       </template>
       <template v-slot:[`item.link`]="{ item }">
-        <btn v-if="item.link" @click="openModal(item)">
+        <button v-if="item.link" @click="openModal(item)">
           <v-icon size="1rem">{{ "mdi-cursor-default-click-outline" }}</v-icon>
           View certificate
-        </btn>
+        </button>
         <span v-else>{{ "Soon" }}</span>
       </template>
     </v-data-table>
@@ -87,19 +87,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-btn {
+button {
   text-decoration: none;
   color: #40e5a1;
 }
 
-btn:hover {
+button:hover {
   color: #5dfaff;
   cursor: pointer;
   @keyframes pulse {
-    from { transform: none; }
-    50% { transform: scale(1.4); }
-    to { transform: none; }
-}
+    from {
+      transform: none;
+    }
+    50% {
+      transform: scale(1.4);
+    }
+    to {
+      transform: none;
+    }
+  }
   i {
     color: yellow;
     animation: pulse 1.2s linear infinite;

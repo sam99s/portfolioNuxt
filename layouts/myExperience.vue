@@ -11,6 +11,7 @@
         </p>
       </v-col>
     </v-row>
+    <!-- Macena -->
     <Jobs
       :title="jobs.macena.title"
       :subtitle="jobs.macena.subtitle"
@@ -35,22 +36,22 @@ export default {
         macena: {
           title: "Macena",
           subtitle: "Nov 2021 - Currently",
-          jobImg: "",
-          jobGif: "",
-          text: "",
-          additionalText: "",
+          jobImg: "/experience/macena/macenaWorks.png",
+          jobGif: "/experience/macena/macenaGif.gif",
+          text: "At Macena we are dedicated to health management for companies and institutions in the sector. Geclisa is a health software for the management of clinics, sanatoriums and hospitals, while Gecros is a comprehensive management system for social, prepaid and mutual funds.",
+          additionalText: "In my role, I currently work with technologies like VUE JS, implementing VUEX and Vuetify from the client side. On the server side we work with .NET technologies with C# and SQL Server.",
           tasks: {
-            task1: "",
-            task2: "",
-            task3: "",
-            task4: "",
-            task5: "",
-            task6: "",
-            task7: "",
-            task8: "",
-            task9: "",
+            task1: "Configuration of digital totems",
+            task2: "Shift rescheduling",
+            task3: "Styles for live medical consultations",
+            task4: "Shift configuration",
+            task5: "Creating services for the API (CRUD)",
+            /* task6: "", */
+            task7: "Totem Home Screen Styles",
+            task8: "Advanced settings",
+            /* task9: "", */
           },
-          site: "",
+          site: "https://www.macena.com.ar/",
         },
       },
     };

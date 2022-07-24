@@ -10,7 +10,7 @@
         </v-row>
         <v-spacer />
         <v-row>
-          <v-col cols="12" class="px-16 text-center">
+          <v-col cols="12" class="text-center">
             <p>
               I am a Full Stack Developer, located in Córdoba, Argentina. I have
               a lot of passion for the IT world and its business context.

@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="mt-5">
     <v-row>
       <v-col cols="12" class="text-center">
         <h2>My work experience and personal projects</h2>

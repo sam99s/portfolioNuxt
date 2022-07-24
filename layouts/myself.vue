@@ -61,21 +61,35 @@
         </v-row>
       </v-col>
 
-      <!-- <StudiesCard
-        :title="studies.dotnet.title"
-        :subtitle="studies.dotnet.subtitle"
-        :text="studies.dotnet.text"
-        :image="studies.dotnet.image"
-        v-if="isHome"
-      />
+      <v-col cols="12" sm="4" contain>
+        <CardImage
+          :mainImage="studies.dotnet.image"
+          :title="studies.dotnet.title"
+          :subtitle="studies.dotnet.subtitle"
+          :text="studies.dotnet.text"
+          v-if="isHome"
+        />
+      </v-col>
 
-      <StudiesCard
-        :title="studies.nuxt.title"
-        :subtitle="studies.nuxt.subtitle"
-        :text="studies.nuxt.text"
-        :image="studies.nuxt.image"
-        v-if="isHome"
-      /> -->
+      <v-col cols="12" sm="4" contain>
+        <CardImage
+          :mainImage="studies.nuxt.image"
+          :title="studies.nuxt.title"
+          :subtitle="studies.nuxt.subtitle"
+          :text="studies.nuxt.text"
+          v-if="isHome"
+        />
+      </v-col>
+
+      <v-col cols="12" sm="4" contain>
+        <CardImage
+          :mainImage="studies.nuxt.image"
+          :title="studies.nuxt.title"
+          :subtitle="studies.nuxt.subtitle"
+          :text="studies.nuxt.text"
+          v-if="isHome"
+        />
+      </v-col>
 
       <v-col cols="12" class="text-center" v-if="isHome">
         <v-btn outlined elevation="2" color="#40e5a1" to="/skills" router exact
@@ -88,7 +102,6 @@
 
 <script>
 import StudieProgressBar from "../components/StudieProgressBar.vue";
-import StudiesCard from "../components/StudiesCard.vue";
 
 export default {
   name: "myself",
@@ -100,7 +113,6 @@ export default {
   },
   components: {
     StudieProgressBar,
-    StudiesCard,
   },
   data() {
     return {
@@ -152,7 +164,7 @@ p {
   }
 }
 
-@media (max-width: 959px) and (min-width: 600px){
+@media (max-width: 959px) and (min-width: 600px) {
   .myself-image {
     display: flex;
     justify-content: center;

@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="mt-8">
     <h2>Skills & tools</h2>
     <v-row>
       <v-col cols="12">
@@ -26,35 +26,29 @@
           the Front End side, specifically with JavaScript Vanilla and VUE JS.
         </p>
       </v-col>
-      <v-col cols="12" md="6" class="py-0">
-        <v-container class="d-flex justify-content-between">
-          <v-row>
-            <v-col cols="12" sm="6">
-              <v-img src="/sam99s2021.png" height="70%" contain></v-img>
-            </v-col>
-            <v-col cols="12" sm="6" class="pl-0">
-              <ul>
-                <li class="my-3">
-                  My greatest strength: <br />
-                  <v-icon color="#efd81d">{{
-                    "mdi-language-javascript"
-                  }}</v-icon>
-                  JavaScript
-                </li>
-                <li class="my-3">
-                  My current approach: <br />
-                  <v-icon color="#9638ad">{{ "mdi-language-csharp" }}</v-icon>
-                  .NET
-                </li>
-                <li class="my-3">
-                  My tool lost in the time: <br />
-                  <v-icon color="#366996">{{ "mdi-language-python" }}</v-icon>
-                  Python
-                </li>
-              </ul>
-            </v-col>
-          </v-row>
-        </v-container>
+      <v-col cols="12" md="6" class="py-0 d-flex flex-wrap justify-content-betweem">
+        <v-col cols="12" sm="6">
+          <v-img src="/sam99s2021.png" height="70%" contain></v-img>
+        </v-col>
+        <v-col cols="12" sm="6" class="pl-0">
+          <ul>
+            <li class="my-3">
+              My greatest strength: <br />
+              <v-icon color="#efd81d">{{ "mdi-language-javascript" }}</v-icon>
+              JavaScript
+            </li>
+            <li class="my-3">
+              My current approach: <br />
+              <v-icon color="#9638ad">{{ "mdi-language-csharp" }}</v-icon>
+              .NET
+            </li>
+            <li class="my-3">
+              My tool lost in the time: <br />
+              <v-icon color="#366996">{{ "mdi-language-python" }}</v-icon>
+              Python
+            </li>
+          </ul>
+        </v-col>
       </v-col>
       <v-col cols="12" class="py-0 text-center">
         <p>
@@ -156,12 +150,6 @@
             to learn, and NUXT JS came for those reasons.
           </p>
         </v-col>
-        <StudiesCard
-          :title="studies.nuxt.title"
-          :subtitle="studies.nuxt.subtitle"
-          :text="studies.nuxt.text"
-          :image="studies.nuxt.image"
-        />
         <v-col cols="12">
           So far I have been reading the documentation and creating code.
           However, I plan to take the courses at platzi at the end of the .NET
@@ -211,7 +199,6 @@
 import SplitCarousel from "../../components/SplitCarousel.vue";
 import SplitCarouselItem from "../../components/SplitCarouselItem.vue";
 import CurrentlyStudy from "../../layouts/currentlyStudy.vue";
-import StudiesCard from "../../components/StudiesCard.vue";
 import PastStudies from "../../layouts/pastStudies.vue";
 // Documentation: https://github.com/Aaron00101010/vue-split-carousel/tree/1.x
 
@@ -220,7 +207,6 @@ export default {
     SplitCarousel,
     SplitCarouselItem,
     CurrentlyStudy,
-    StudiesCard,
     PastStudies,
   },
   data() {

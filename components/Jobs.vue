@@ -4,11 +4,11 @@
       <h3>{{ title }}</h3>
       <span>{{ subtitle }}</span>
     </v-col>
-    <v-col cols="12" md="6" align-self="center">
+    <v-col cols="12" sm="6" align-self="center">
       <v-img :src="jobImg" max-height="280px" contain></v-img>
     </v-col>
 
-    <v-col cols="12" md="6">
+    <v-col cols="12" sm="6">
       <v-row>
         <v-col cols="12" class="text-center">
           <p>{{ text }}</p>
@@ -27,7 +27,7 @@
     <v-col cols="12" v-if="tasks && tasksValidation()">
       <v-card>
         <v-card-title>Relevant tasks performed</v-card-title>
-        <v-card-text class="d-flex">
+        <v-card-text class="d-flex flex-wrap">
           <v-col cols="12" sm="6" md="4" align-self="center">
             <ul>
               <li v-if="tasks.task1">{{ tasks.task1 }}</li>

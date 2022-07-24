@@ -1,42 +1,43 @@
 <template>
-  <v-container class="mt-5 py-5">
-    <v-row>
-      <v-col cols="12" md="4">
-        <h3>{{ title }}</h3>
-        <v-container>
-          <v-row>
-            <v-col cols="12" align-self="center">
-              <v-img :src="studyImg"></v-img>
-            </v-col>
-            <v-col cols="12">{{ text1 }}</v-col>
-          </v-row>
-          <v-row>
-            <v-col cols="12">{{ text2 }}</v-col>
-          </v-row>
-          <v-row>
-            <v-col cols="12">
-              <a :href="institution.site" target="_blank">
-                <v-img :src="institution.logo"></v-img>
-              </a>
-            </v-col>
-          </v-row>
-          <v-row>
-            <v-col cols="12">
-              <StudieProgressBar :valueProp="averageProgress" :title="`${title} progress`" />
-            </v-col>
-          </v-row>
-        </v-container>
-      </v-col>
+  <v-row>
+    <v-col cols="12" md="4">
+      <h3>{{ title }}</h3>
+      <v-container>
+        <v-row>
+          <v-col cols="12" align-self="center">
+            <v-img :src="studyImg"></v-img>
+          </v-col>
+          <v-col cols="12">{{ text1 }}</v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="12">{{ text2 }}</v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="12">
+            <a :href="institution.site" target="_blank">
+              <v-img :src="institution.logo"></v-img>
+            </a>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="12">
+            <StudieProgressBar
+              :valueProp="averageProgress"
+              :title="`${title} progress`"
+            />
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-col>
 
-      <v-col cols="12" md="8">
-        <ToolProgress
-          :headers="headers"
-          :items="items"
-          :institution="institution"
-        />
-      </v-col>
-    </v-row>
-  </v-container>
+    <v-col cols="12" md="8" class="px-0">
+      <ToolProgress
+        :headers="headers"
+        :items="items"
+        :institution="institution"
+      />
+    </v-col>
+  </v-row>
 </template>
 
 <script>

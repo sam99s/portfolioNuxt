@@ -1,8 +1,8 @@
 <template>
-  <v-container>
+  <v-container class="contact-form__width">
     <h2 class="mb-5">Contact me</h2>
     <v-row>
-      <v-col md="6">
+      <v-col cols="12" md="6" class="text-center">
         <v-form
           ref="form"
           form="form"
@@ -78,7 +78,7 @@
           </v-col>
         </v-row>
       </v-col>
-      <v-col cols="6" class="pb-16 pl-16">
+      <v-col cols="12" sm="6" class="pb-16 pl-16 contact-image__display">
         <v-img src="/sam99sss.png" contain />
       </v-col>
     </v-row>
@@ -112,5 +112,17 @@ export default {
 <style scoped>
 ::v-deep .v-text-field__details {
   margin-bottom: 1px !important;
+}
+
+@media (max-width: 959px) {
+  .contact-image__display{
+    display: none;
+  }
+}
+
+@media (max-width: 959px) and (min-width: 601px) {
+  .contact-form__width{
+    max-width: 75vw;
+  }
 }
 </style>

@@ -4,10 +4,10 @@
     <v-row>
       <v-col cols="12" md="6">
         <v-row class="d-flex">
-          <v-col cols="12" md="4">
-            <v-img src="/sam99ss.png"></v-img>
+          <v-col cols="12" sm="4" class="myself-image">
+            <v-img src="/sam99ss.png" class="myself-image__size"></v-img>
           </v-col>
-          <v-col cols="12" md="8" class="d-flex align-center px-8">
+          <v-col cols="12" sm="8" class="d-flex align-center px-8 myself-text">
             <p>
               My nickname is Sam, my year of birth is 1999 and also my last name
               starts with the letter "s". This is the combination that I like
@@ -15,14 +15,16 @@
             </p>
           </v-col>
         </v-row>
-        <p>
-          My technological strengths are based on JavaScript and are going to
-          get bigger in cross-platform development.
-        </p>
-        <p>
-          Currently, I am working on the migration of a desktop software to the
-          web. Using VUE JS and .NET as main technologies.
-        </p>
+        <v-row>
+          <p class="myself-text">
+            My technological strengths are based on JavaScript and are going to
+            get bigger in cross-platform development.
+          </p>
+          <p class="myself-text">
+            Currently, I am working on the migration of a desktop software to
+            the web. Using VUE JS and .NET as main technologies.
+          </p>
+        </v-row>
       </v-col>
 
       <v-col cols="12" md="6">
@@ -76,14 +78,8 @@
       /> -->
 
       <v-col cols="12" class="text-center" v-if="isHome">
-        <v-btn 
-        outlined 
-        elevation="2" 
-        color="#40e5a1" 
-        to="/skills" 
-        router 
-        exact
-        >more information</v-btn
+        <v-btn outlined elevation="2" color="#40e5a1" to="/skills" router exact
+          >more information</v-btn
         >
       </v-col>
     </v-row>
@@ -99,8 +95,8 @@ export default {
   props: {
     isHome: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   components: {
     StudieProgressBar,
@@ -139,5 +135,32 @@ p {
 
 .v-card__subtitle {
   color: #40e5a1;
+}
+
+@media (max-width: 599px) {
+  .myself-text {
+    padding: 0 !important;
+  }
+  .myself-image {
+    display: flex;
+    justify-content: center;
+  }
+  .myself-image__size {
+    max-width: 150px;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 959px) and (min-width: 600px){
+  .myself-image {
+    display: flex;
+    justify-content: center;
+  }
+  .myself-image__size {
+    max-width: 100px;
+    height: auto;
+    object-fit: contain;
+  }
 }
 </style>

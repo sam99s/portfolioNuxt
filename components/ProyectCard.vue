@@ -4,7 +4,7 @@
       <v-card outlined>
         <v-img :src="backgroundImage"></v-img>
         <v-card-actions>
-          <v-col cols="12" class="text-center">
+          <v-col cols="12" class="text-center title-span__size">
             <span>
               <v-icon color="green">{{ "mdi-open-in-new" }}</v-icon>
               {{ title }}</span
@@ -16,7 +16,7 @@
     <v-card v-else outlined>
       <v-img :src="backgroundImage"></v-img>
       <v-card-actions>
-        <v-col cols="12" class="text-center">
+        <v-col cols="12" class="text-center title-span__size">
           <span>{{ title }}</span>
         </v-col>
       </v-card-actions>
@@ -52,9 +52,36 @@ a {
   text-decoration: none;
 }
 
+@media (min-width: 960px) {
+  .proyect-container__width{
+    max-width: 80%;
+  }
+  span{
+    font-size: 0.87rem;
+  }
+}
+
 @media (max-width: 959px) and (min-width: 601px) {
   .proyect-container__width{
     max-width: 60%;
+  }
+}
+
+@media (max-width: 760px) {
+  .title-span__size{
+    padding: 1px 3px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 599px) {
+  span{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  span{
+    font-size: 8px;
   }
 }
 </style>

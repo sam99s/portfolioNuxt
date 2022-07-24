@@ -59,7 +59,7 @@
         </v-row>
       </v-col>
 
-      <StudiesCard
+      <!-- <StudiesCard
         :title="studies.dotnet.title"
         :subtitle="studies.dotnet.subtitle"
         :text="studies.dotnet.text"
@@ -73,7 +73,7 @@
         :text="studies.nuxt.text"
         :image="studies.nuxt.image"
         v-if="isHome"
-      />
+      /> -->
 
       <v-col cols="12" class="text-center" v-if="isHome">
         <v-btn 

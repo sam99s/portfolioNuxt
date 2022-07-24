@@ -7,6 +7,7 @@
           <ProyectCard
             title="E-commerce"
             backgroundImage="/experience/candado.png"
+            link=""
           />
         </v-col>
 
@@ -14,6 +15,7 @@
           <ProyectCard
             title="Depordev"
             backgroundImage="/experience/Depordev/logo.png"
+            link="https://github.com/sam99s/react-ecommerce"
           />
         </v-col>
 
@@ -21,11 +23,16 @@
           <ProyectCard
             title="Dragon Ball Online"
             backgroundImage="/experience/DragonBallOnline/logo.png"
+            link="https://github.com/sam99s/dragon-ball-online"
           />
         </v-col>
 
         <v-col cols="12" md="4" lg="3">
-          <ProyectCard title="Soon" backgroundImage="/experience/candado.png" />
+          <ProyectCard
+            title="Soon"
+            backgroundImage="/experience/candado.png"
+            link=""
+          />
         </v-col>
       </v-row>
 
@@ -34,6 +41,7 @@
           <ProyectCard
             title="Top Secret"
             backgroundImage="/experience/candado.png"
+            link=""
           />
         </v-col>
 
@@ -41,6 +49,7 @@
           <ProyectCard
             title="Con Palmeras"
             backgroundImage="/experience/ConPlameras/ConPalmeras.png"
+            link=""
           />
         </v-col>
 
@@ -48,6 +57,7 @@
           <ProyectCard
             title="API REST"
             backgroundImage="/experience/candado.png"
+            link=""
           />
         </v-col>
 
@@ -55,6 +65,7 @@
           <ProyectCard
             title="Football Knowledge"
             backgroundImage="/experience/FootballKnowledge/logo.png"
+            link="https://github.com/sam99s/Football-Knowledge/tree/master"
           />
         </v-col>
       </v-row>
@@ -64,6 +75,7 @@
           <ProyectCard
             title="Task List"
             backgroundImage="/experience/TaskList/logo.png"
+            link="https://github.com/sam99s/tasks-list"
           />
         </v-col>
 
@@ -71,6 +83,7 @@
           <ProyectCard
             title="Chat Lan"
             backgroundImage="/experience/ChatLan/logo.png"
+            link="https://github.com/sam99s/Chat-With-Websockets"
           />
         </v-col>
 
@@ -78,11 +91,16 @@
           <ProyectCard
             title="API REST"
             backgroundImage="/experience/candado.png"
+            link=""
           />
         </v-col>
 
         <v-col cols="12" md="4" lg="3">
-          <ProyectCard title="Blog" backgroundImage="/experience/candado.png" />
+          <ProyectCard
+            title="Blog"
+            backgroundImage="/experience/candado.png"
+            link=""
+          />
         </v-col>
       </v-row>
 

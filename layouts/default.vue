@@ -30,19 +30,29 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar :clipped-left="clipped" fixed app>
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn icon @click.stop="miniVariant = !miniVariant">
-        <v-icon>mdi-{{ `chevron-${miniVariant ? "right" : "left"}` }}</v-icon>
-      </v-btn>
-      <v-btn icon @click.stop="clipped = !clipped">
-        <v-icon v-if="clipped">mdi-arrow-collapse-horizontal</v-icon>
-        <v-icon v-else>mdi-arrow-split-vertical</v-icon>
-      </v-btn>
-      <v-spacer />
-      <v-toolbar-title class="text-center text-color__primary" v-text="title" />
-      <v-spacer />
-    </v-app-bar>
+    <v-row>
+      <v-col cols="12" class="pa-0 ma-0">
+        <v-app-bar :clipped-left="clipped" fixed app>
+          <v-row>
+            <v-col cols="12" sm="5" class="pa-0 ma-0" align-self="center">
+              <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
+              <v-btn icon @click.stop="miniVariant = !miniVariant">
+                <v-icon
+                  >mdi-{{ `chevron-${miniVariant ? "right" : "left"}` }}</v-icon
+                >
+              </v-btn>
+              <v-btn icon @click.stop="clipped = !clipped">
+                <v-icon v-if="clipped">mdi-arrow-collapse-horizontal</v-icon>
+                <v-icon v-else>mdi-arrow-split-vertical</v-icon>
+              </v-btn>
+            </v-col>
+            <v-col cols="12" sm="7" class="pa-0 ma-0 d-flex justify-content-start" align-self="center">
+              <h1 class="text-center text-color__primary">{{ title }}</h1>
+            </v-col>
+          </v-row>
+        </v-app-bar>
+      </v-col>
+    </v-row>
     <v-main>
       <v-container>
         <Nuxt />
@@ -120,7 +130,7 @@ export default {
       miniVariant: true,
       right: true,
       rightDrawer: false,
-      title: "Samuel Schulz - Full stack developer",
+      title: "Samuel Schulz - Full Stack Developer",
       footerIcons: {
         GitHub: "mdi-github",
         LinkedIn: "mdi-linkedin",

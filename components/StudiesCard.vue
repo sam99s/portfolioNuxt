@@ -8,7 +8,7 @@
           <v-card-text>{{ text }}</v-card-text>
         </v-col>
         <v-spacer />
-        <v-col cols="12" md="3" class="pa-0 d-flex align-items-center">
+        <v-col cols="12" md="3" class="pa-0 d-flex flex-wrap align-items-center">
           <v-img :src="image"></v-img>
         </v-col>
       </v-card>

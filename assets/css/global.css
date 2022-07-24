@@ -18,9 +18,13 @@
     background-color: #40e5a1;
 }
 
+h1{
+    color: #40e5a1;
+}
+
 h2{
     color: #40e5a1;
-    font-size: 2.5em;
+    font-size: 2.3em;
 }
 
 h3{
@@ -31,4 +35,25 @@ h3{
 h4{
     color: #40e5a1;
     font-size: 1.5em;
+}
+
+@media (max-width: 959px) {
+    .welcome-text__mediaCenter{
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    header{
+        height: 70px !important;
+    }
+    h1{
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 460px) {
+    h1{
+        font-size: 1.4em;
+    }
 }

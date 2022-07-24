@@ -1,5 +1,5 @@
 <template>
-  <v-container class="mx-0 px-0">
+  <v-container class="mx-0 px-0 proyect-container__width">
     <a :href="link" target="_blank" v-if="link">
       <v-card outlined>
         <v-img :src="backgroundImage"></v-img>
@@ -50,5 +50,11 @@ export default {
 }
 a {
   text-decoration: none;
+}
+
+@media (max-width: 959px) and (min-width: 601px) {
+  .proyect-container__width{
+    max-width: 60%;
+  }
 }
 </style>

@@ -3,7 +3,7 @@
     <h2>My proyects</h2>
     <v-container class="ma-0 pa-0">
       <v-row>
-        <v-col cols="12" md="4" lg="3">
+        <v-col cols="6" md="3" class="d-flex justify-center">
           <ProyectCard
             title="E-commerce"
             backgroundImage="/experience/candado.png"
@@ -11,7 +11,7 @@
           />
         </v-col>
 
-        <v-col cols="12" md="4" lg="3">
+        <v-col cols="6" md="3" class="d-flex justify-center">
           <ProyectCard
             title="Depordev"
             backgroundImage="/experience/Depordev/logo.png"
@@ -19,7 +19,7 @@
           />
         </v-col>
 
-        <v-col cols="12" md="4" lg="3">
+        <v-col cols="6" md="3" class="d-flex justify-center">
           <ProyectCard
             title="Dragon Ball Online"
             backgroundImage="/experience/DragonBallOnline/logo.png"
@@ -27,7 +27,7 @@
           />
         </v-col>
 
-        <v-col cols="12" md="4" lg="3">
+        <v-col cols="6" md="3" class="d-flex justify-center">
           <ProyectCard
             title="Soon"
             backgroundImage="/experience/candado.png"
@@ -37,7 +37,7 @@
       </v-row>
 
       <v-row>
-        <v-col cols="12" md="4" lg="3">
+        <v-col cols="6" md="3" class="d-flex justify-center">
           <ProyectCard
             title="Top Secret"
             backgroundImage="/experience/candado.png"
@@ -45,7 +45,7 @@
           />
         </v-col>
 
-        <v-col cols="12" md="4" lg="3">
+        <v-col cols="6" md="3" class="d-flex justify-center">
           <ProyectCard
             title="Con Palmeras"
             backgroundImage="/experience/ConPlameras/ConPalmeras.png"
@@ -53,7 +53,7 @@
           />
         </v-col>
 
-        <v-col cols="12" md="4" lg="3">
+        <v-col cols="6" md="3" class="d-flex justify-center">
           <ProyectCard
             title="API REST"
             backgroundImage="/experience/candado.png"
@@ -61,7 +61,7 @@
           />
         </v-col>
 
-        <v-col cols="12" md="4" lg="3">
+        <v-col cols="6" md="3" class="d-flex justify-center">
           <ProyectCard
             title="Football Knowledge"
             backgroundImage="/experience/FootballKnowledge/logo.png"
@@ -71,7 +71,7 @@
       </v-row>
 
       <v-row v-if="moreFlag">
-        <v-col cols="12" md="4" lg="3">
+        <v-col cols="6" md="3" class="d-flex justify-center">
           <ProyectCard
             title="Task List"
             backgroundImage="/experience/TaskList/logo.png"
@@ -79,7 +79,7 @@
           />
         </v-col>
 
-        <v-col cols="12" md="4" lg="3">
+        <v-col cols="6" md="3" class="d-flex justify-center">
           <ProyectCard
             title="Chat Lan"
             backgroundImage="/experience/ChatLan/logo.png"
@@ -87,7 +87,7 @@
           />
         </v-col>
 
-        <v-col cols="12" md="4" lg="3">
+        <v-col cols="6" md="3" class="d-flex justify-center">
           <ProyectCard
             title="API REST"
             backgroundImage="/experience/candado.png"
@@ -95,7 +95,7 @@
           />
         </v-col>
 
-        <v-col cols="12" md="4" lg="3">
+        <v-col cols="6" md="3" class="d-flex justify-center">
           <ProyectCard
             title="Blog"
             backgroundImage="/experience/candado.png"

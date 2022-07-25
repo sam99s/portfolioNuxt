@@ -23,6 +23,10 @@ export default {
         rel: "stylesheet",
       },
     ],
+    script: [{
+      type:"text/javascript",
+      src:"https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

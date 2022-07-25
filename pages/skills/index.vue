@@ -61,7 +61,7 @@
           VUE JS and JavaScript, and you can visit its code by clicking the
           following button, to go to the GitHub site.
         </p>
-        <a href="https://github.com/sam99s" target="_blank">
+        <a href="https://github.com/sam99s/portfolioNuxt" target="_blank">
           <v-btn outlined elevation="2" color="#40e5a1">Go to repository</v-btn>
         </a>
       </v-col>

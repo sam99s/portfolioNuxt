@@ -66,6 +66,15 @@ export default {
           objetive: "Sr. dev",
         },
         {
+          subject: "SQL",
+          institution: "Platzi",
+          since: "2022",
+          until: "2023",
+          priorKnowledge: true,
+          currentlyState: "Studying",
+          objetive: "Others",
+        },
+        {
           subject: "NUXT JS",
           institution: "Platzi",
           since: "2022",

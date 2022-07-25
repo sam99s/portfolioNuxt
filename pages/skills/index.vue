@@ -26,7 +26,11 @@
           the Front End side, specifically with JavaScript Vanilla and VUE JS.
         </p>
       </v-col>
-      <v-col cols="12" md="6" class="py-0 d-flex flex-wrap justify-content-betweem">
+      <v-col
+        cols="12"
+        md="6"
+        class="py-0 d-flex flex-wrap justify-content-betweem"
+      >
         <v-col cols="12" sm="6">
           <v-img src="/sam99s2021.png" height="70%" contain></v-img>
         </v-col>
@@ -140,6 +144,22 @@
       />
 
       <v-row class="my-5 pt-5">
+        <h3>SQL</h3>
+        <v-col cols="12">
+          <p>
+            SQL is so far the tool I most want to improve in the short term.
+            When I found this tool in my current job, I realized how powerful it
+            is over non-relational databases.
+          </p>
+          <p>
+            From my perspective, I will continue to focus on learning relational
+            databases, but without closing the doors to the opposite path, since
+            they are very useful in other cases.
+          </p>
+        </v-col>
+      </v-row>
+
+      <v-row class="my-5 pt-5">
         <h3>VUE JS & NUXT JS</h3>
         <v-col cols="12">
           <p>
@@ -151,10 +171,12 @@
           </p>
         </v-col>
         <v-col cols="12">
-          So far I have been reading the documentation and creating code.
-          However, I plan to take the courses at platzi at the end of the .NET
-          learning path. And since I can't miss the practice, I also plan to do
-          another E-commerce project with this tool.
+          <p>
+            So far I have been reading the documentation and creating code.
+            However, I plan to take the courses at platzi at the end of the .NET
+            learning path. And since I can't miss the practice, I also plan to
+            do another E-commerce project with this tool.
+          </p>
         </v-col>
       </v-row>
 

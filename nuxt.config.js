@@ -13,6 +13,7 @@ export default {
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     link: [{ rel: "preconnect", href: "https://fonts.googleapis.com" }],

@@ -73,4 +73,8 @@ export default {
 a {
   text-decoration: none;
 }
+
+::v-deep .v-image__image--contain {
+    background-size: cover !important;
+}
 </style>

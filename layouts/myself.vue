@@ -83,10 +83,10 @@
 
       <v-col cols="12" sm="4" contain>
         <CardImage
-          :mainImage="studies.nuxt.image"
-          :title="studies.nuxt.title"
-          :subtitle="studies.nuxt.subtitle"
-          :text="studies.nuxt.text"
+          :mainImage="studies.databases.image"
+          :title="studies.databases.title"
+          :subtitle="studies.databases.subtitle"
+          :text="studies.databases.text"
           v-if="isHome"
         />
       </v-col>
@@ -133,6 +133,12 @@ export default {
           subtitle: "Platzi 2022 - 2023",
           text: "Nuxt.js is a free and open source JavaScript library based on Vue.js, Node.js, Webpack and Babel.js. This website is made in this technology",
           image: "/studies/nuxt/principal.png",
+        },
+        databases: {
+          title: "Databases",
+          subtitle: "Platzi 2022 - 2023",
+          text: "In the field, there are mainly 2 types of database engines, relational and non-relational. Each one is more suitable depending on the use case. My focus will be mainly on SQL (relational), but I will also learn the non-relational type of database to a lesser extent.",
+          image: "/studies/databases/logo.jpg",
         },
       },
     };

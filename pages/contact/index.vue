@@ -1,5 +1,5 @@
 <template>
-    <v-container>
+    <v-container class="footer-contact__overflow">
         <ContactForm />
     </v-container>
 </template>
@@ -12,5 +12,7 @@ export default {
 </script>
 
 <style scoped>
-
+.footer-contact__overflow{
+    overflow-x: hidden;
+}
 </style>

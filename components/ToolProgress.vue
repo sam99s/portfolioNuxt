@@ -32,7 +32,6 @@
     <v-dialog
       v-if="modalFlag"
       v-model="modalFlag"
-      max-width="40%"
       @keydown.esc="modalFlag = false"
       transition="dialog-bottom-transition"
     >
@@ -110,6 +109,22 @@ button:hover {
     color: yellow;
     animation: pulse 1.2s linear infinite;
     transform-origin: center;
+  }
+}
+
+::v-deep .v-dialog {
+  max-width: 40% !important;
+}
+
+@media (min-width: 430px) and (max-width: 630px) {
+  ::v-deep .v-dialog {
+    max-width: 60% !important;
+  }
+}
+
+@media (max-width: 429px) {
+  ::v-deep .v-dialog {
+    max-width: 90% !important;
   }
 }
 </style>

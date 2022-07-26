@@ -46,7 +46,12 @@
                 <v-icon v-else>mdi-arrow-split-vertical</v-icon>
               </v-btn>
             </v-col>
-            <v-col cols="12" sm="7" class="pa-0 ma-0 d-flex justify-content-start" align-self="center">
+            <v-col
+              cols="12"
+              sm="7"
+              class="pa-0 ma-0 d-flex justify-content-start"
+              align-self="center"
+            >
               <h1 class="text-center text-color__primary">{{ title }}</h1>
             </v-col>
           </v-row>
@@ -95,10 +100,12 @@
 <script>
 export default {
   name: "DefaultLayout",
+
   data() {
     return {
       clipped: true,
-      drawer: true,
+      drawer: false,
+      mediaQueryDrawer: null,
       fixed: false,
       items: [
         {
@@ -137,6 +144,12 @@ export default {
         Instagram: "mdi-instagram",
       },
     };
+  },
+
+  mounted() {
+    this.mediaQueryDrawer = window.matchMedia("(max-width: 768px)");
+    this.drawer = this.mediaQueryDrawer.matches ? false : true;
+    this.miniVariant = this.mediaQueryDrawer.matches ? false : true;
   },
 };
 </script>

@@ -82,7 +82,7 @@
         </v-row>
       </v-col>
       <v-col cols="12" sm="6" class="pb-16 pl-16 contact-image__display">
-        <v-img src="/sam99sss.png" contain />
+        <v-img src="/sam99sss.png" contain max-height="58vh"/>
       </v-col>
     </v-row>
   </v-container>

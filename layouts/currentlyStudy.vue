@@ -24,6 +24,7 @@
             <StudieProgressBar
               :valueProp="averageProgress"
               :title="`${title} progress`"
+              :colorProp='"#8e33a1"'
             />
           </v-col>
         </v-row>

@@ -27,33 +27,7 @@
         </v-row>
       </v-col>
 
-      <v-col cols="12" md="6">
-        <StudieProgressBar
-          :valueProp="dotnet"
-          :colorProp="'#5c2d91'"
-          :title="'.NET (C#)'"
-        />
-        <StudieProgressBar
-          :valueProp="vuejs"
-          :colorProp="'#3fb27f'"
-          :title="'VUE JS'"
-        />
-        <StudieProgressBar
-          :valueProp="reactjs"
-          :colorProp="'#5ed3f3'"
-          :title="'React JS'"
-        />
-        <StudieProgressBar
-          :valueProp="javascript"
-          :colorProp="'#f7df1e'"
-          :title="'JavaScript'"
-        />
-        <StudieProgressBar
-          :valueProp="english"
-          :colorProp="'red'"
-          :title="'English'"
-        />
-
+      <v-col cols="12" md="6" align-self="center">
         <v-row>
           <h2 class="text-center">
             What am I studying and what do I want to study?

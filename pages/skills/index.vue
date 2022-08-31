@@ -23,7 +23,7 @@
         <p>
           Without a doubt, all developers have more facilities for a specific
           field, in relation to their peers. Currently, that area I feel is from
-          the Front End side, specifically with JavaScript Vanilla and VUE JS.
+          the Front End side, specifically with JavaScript Vanilla and Vue.js.
         </p>
       </v-col>
       <v-col
@@ -57,8 +57,8 @@
       <v-col cols="12" class="py-0 text-center">
         <p>
           In fact, this site is made with
-          <span class="text-color__primary">NUXT JS</span>, that is, based on
-          VUE JS and JavaScript, and you can visit its code by clicking the
+          <span class="text-color__primary">Nuxt.js</span>, that is, based on
+          Vue.js and JavaScript, and you can visit its code by clicking the
           following button, to go to the GitHub site.
         </p>
         <a href="https://github.com/sam99s/portfolioNuxt" target="_blank">
@@ -93,6 +93,9 @@
             Throughout the year, study at Platzi. Then in 2021 I took 3 courses
             at Coderhouse and finally I returned to Platzi throughout this year
             to specialize in my passions.
+          </p>
+          <p>
+            My goal for 2023 is to enter the Software Engineering career.
           </p>
         </v-col>
         <v-spacer />
@@ -160,14 +163,14 @@
       </v-row>
 
       <v-row class="my-5 pt-5">
-        <h3>VUE JS & NUXT JS</h3>
+        <h3>Vue.js & Nuxt.js</h3>
         <v-col cols="12">
           <p>
-            As my actuality weighs more on the .NET side, with NUXT JS I focus
+            As my actuality weighs more on the .NET side, with Nuxt.js I focus
             on making websites like this portfolio. The truth is that it doesn't
             cost me much, since I program about 6 hours a day in my work with
-            VUE JS. But the other reality is that there is always something new
-            to learn, and NUXT JS came for those reasons.
+            Vue.js. But the other reality is that there is always something new
+            to learn, and Nuxt.js came for those reasons.
           </p>
         </v-col>
         <v-col cols="12">
@@ -429,22 +432,22 @@ export default {
               studying: true,
               approved: false,
               since: "08/2022",
-              until: "08/2022",
+              until: "09/2022",
               link: "",
             },
             {
               title: "API's with .NET",
               studying: false,
               approved: false,
-              since: "08/2022",
-              until: "08/2022",
+              since: "09/2022",
+              until: "09/2022",
               link: "",
             },
             {
               title: "ASP.NET CORE",
               studying: false,
               approved: false,
-              since: "08/2022",
+              since: "09/2022",
               until: "09/2022",
               link: "",
             },
@@ -452,8 +455,8 @@ export default {
               title: "Web development with Blazor and .NET",
               studying: false,
               approved: false,
-              since: "09/2022",
-              until: "09/2022",
+              since: "10/2022",
+              until: "10/2022",
               link: "",
             },
             {
@@ -480,7 +483,7 @@ export default {
           },
         },
         nuxt: {
-          title: "NUXT JS",
+          title: "Nuxt.js",
           subtitle: "Platzi 2022 - 2023",
           text: "Nuxt.js is a free and open source JavaScript library based on Vue.js, Node.js, Webpack and Babel.js. This website is made in this technology",
           image: "/studies/nuxt/principal.png",

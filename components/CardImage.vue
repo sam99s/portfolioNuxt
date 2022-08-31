@@ -1,6 +1,6 @@
 <template>
   <v-card class="mx-auto" max-width="344">
-    <v-img :src="mainImage" contain height="200px"></v-img>
+    <v-img :src="mainImage" contain height="200px" :alt="'image-'+{title}"></v-img>
 
     <v-card-title>{{ title }}</v-card-title>
 

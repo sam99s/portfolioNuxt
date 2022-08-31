@@ -33,6 +33,15 @@
             </template>
             <span style="color: black; font-weight: 500">JavaScript</span>
           </v-tooltip>
+          <!-- React -->
+          <v-tooltip bottom color="#5ed3f3">
+            <template v-slot:activator="{ on, attrs }">
+              <v-icon v-bind="attrs" v-on="on" color="#5ed3f3">{{
+                "mdi-react"
+              }}</v-icon>
+            </template>
+            <span style="color: black; font-weight: 500">React</span>
+          </v-tooltip>
           <!-- Vue -->
           <v-tooltip bottom color="#3fb27f">
             <template v-slot:activator="{ on, attrs }">
@@ -40,7 +49,7 @@
                 "mdi-vuejs"
               }}</v-icon>
             </template>
-            <span style="color: #000; font-weight: 500">VUE</span>
+            <span style="color: #000; font-weight: 500">Vue</span>
           </v-tooltip>
           <!-- Nuxt -->
           <v-tooltip bottom color="#0f8371">

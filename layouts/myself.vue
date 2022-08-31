@@ -21,8 +21,7 @@
             get bigger in cross-platform development.
           </p>
           <p class="myself-text">
-            Currently, I am working on the migration of a desktop software to
-            the web. Using VUE JS and .NET as main technologies.
+            Until the beginning of September, I was working on the migration of the desktop software to the web. Use of Vue.js and .NET as main technologies.
           </p>
         </v-row>
       </v-col>
@@ -32,10 +31,11 @@
           <h2 class="text-center">
             What am I studying and what do I want to study?
           </h2>
+          <v-img src="/presentToFuture.png"></v-img>
         </v-row>
       </v-col>
 
-      <v-col cols="12" sm="4" contain>
+      <v-col cols="12" sm="6" contain>
         <CardImage
           :mainImage="studies.dotnet.image"
           :title="studies.dotnet.title"
@@ -45,17 +45,7 @@
         />
       </v-col>
 
-      <v-col cols="12" sm="4" contain>
-        <CardImage
-          :mainImage="studies.nuxt.image"
-          :title="studies.nuxt.title"
-          :subtitle="studies.nuxt.subtitle"
-          :text="studies.nuxt.text"
-          v-if="isHome"
-        />
-      </v-col>
-
-      <v-col cols="12" sm="4" contain>
+      <v-col cols="12" sm="6" contain>
         <CardImage
           :mainImage="studies.databases.image"
           :title="studies.databases.title"

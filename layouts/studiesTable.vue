@@ -75,15 +75,6 @@ export default {
           objetive: "Others",
         },
         {
-          subject: "NUXT JS",
-          institution: "Platzi",
-          since: "2022",
-          until: "2022",
-          priorKnowledge: true,
-          currentlyState: "Practicing",
-          objetive: "Others",
-        },
-        {
           subject: "English",
           institution: "Platzi",
           since: "2022",
@@ -140,7 +131,7 @@ export default {
           frequency: "Sometimes",
         },
         {
-          subject: "React JS",
+          subject: "React.js",
           year: 2021,
           frequency: "Often",
         },
@@ -150,7 +141,12 @@ export default {
           frequency: "Hardly ever",
         },
         {
-          subject: "VUE JS",
+          subject: "Vue.js",
+          year: 2021,
+          frequency: "Always",
+        },
+        {
+          subject: "Nuxt.js",
           year: 2021,
           frequency: "Always",
         },
@@ -162,15 +158,19 @@ export default {
         {
           subject: "SQL",
           year: 2022,
-          frequency: "usually",
+          frequency: "Usually",
         },
         {
           subject: "Postman",
           year: 2022,
-          frequency: "usually",
+          frequency: "Usually",
         },
       ],
       wantItems: [
+        {
+          subject: "Software Engineering",
+          between: "2023-2030",
+        },
         {
           subject: "NEXT JS",
           between: "2023-2024",
@@ -181,11 +181,7 @@ export default {
         },
         {
           subject: "Flutter",
-          between: "2024-2025",
-        },
-        {
-          subject: "Software Engineering",
-          between: "2025-2030",
+          between: "2025-2026",
         },
       ],
     };

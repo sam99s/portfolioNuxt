@@ -6,7 +6,7 @@
           My work experience currently consists of two stages in the IT field.
           Meanwhile, my projects are distributed throughout my career, having
           created several since 2020. In them you can see applied technologies
-          such as .NET, VUE JS, REACT JS, SQL, among others, by entering the
+          such as .NET, Vue.js, React.js, SQL, among others, by entering the
           corresponding repositories.
         </p>
       </v-col>
@@ -69,12 +69,12 @@ export default {
       jobs: {
         macena: {
           title: "Macena",
-          subtitle: "Nov 2021 - Currently",
+          subtitle: "Nov 2021 - Sep 2022",
           jobImg: "/experience/macena/macenaWorks.png",
           jobGif: "/experience/macena/macenaGif.gif",
-          text: "At Macena we are dedicated to health management for companies and institutions in the sector. Geclisa is a health software for the management of clinics, sanatoriums and hospitals, while Gecros is a comprehensive management system for social, prepaid and mutual funds.",
+          text: "Macena is dedicated to health management for companies and institutions in the sector. Geclisa is health software for the management of clinics, sanatoriums and hospitals, while Gecros is a comprehensive management system for social, prepaid and mutual funds.",
           additionalText:
-            "In my role, I currently work with technologies like VUE JS, implementing VUEX and Vuetify from the client side. On the server side we work with .NET technologies with C# and SQL Server.",
+            "In my role, I worked with technologies like Vue.js, implementing Vuex and Vuetify from the client side. On the server side, develop different services with .NET and SQL Server.",
           tasks: {
             task1: "Configuration of digital totems",
             task2: "Shift rescheduling",

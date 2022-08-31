@@ -11,7 +11,7 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      { hid: "description", name: "description", content: "I am a full stack programmer. I have experience in .NET, Vue.js and React.js. My current goal is to study software engineering." },
       { name: "format-detection", content: "telephone=no" },
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
     ],

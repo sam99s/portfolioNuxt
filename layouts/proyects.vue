@@ -55,9 +55,9 @@
 
         <v-col cols="6" md="3" class="d-flex justify-center">
           <ProyectCard
-            title="API REST"
-            backgroundImage="/experience/candado.png"
-            link=""
+            title="API dbonline"
+            backgroundImage="/experience/DragonBallOnline/logo.png"
+            link="https://github.com/sam99s/dbonline"
           />
         </v-col>
 

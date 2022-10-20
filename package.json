@@ -18,6 +18,8 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.12.3"
+    "@nuxtjs/vuetify": "^1.12.3",
+    "@volar-plugins/vetur": "^0.1.0",
+    "vls": "^0.8.1"
   }
 }

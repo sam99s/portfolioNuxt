@@ -11,9 +11,22 @@
         </p>
       </v-col>
     </v-row>
+    <!-- Shifta -->
+    <Jobs
+      :title="jobs.shifta.title"
+      :position="jobs.shifta.position"
+      :subtitle="jobs.shifta.subtitle"
+      :jobImg="jobs.shifta.jobImg"
+      :jobGif="jobs.shifta.jobGif"
+      :text="jobs.shifta.text"
+      :additionalText="jobs.shifta.additionalText"
+      :tasks="jobs.shifta.tasks"
+      :site="jobs.shifta.site"
+    />
     <!-- Macena -->
     <Jobs
       :title="jobs.macena.title"
+      :position="jobs.macena.position"
       :subtitle="jobs.macena.subtitle"
       :jobImg="jobs.macena.jobImg"
       :jobGif="jobs.macena.jobGif"
@@ -25,6 +38,7 @@
     <!-- Blue Digital -->
     <Jobs
       :title="jobs.blueDigital.title"
+      :position="jobs.blueDigital.position"
       :subtitle="jobs.blueDigital.subtitle"
       :jobImg="jobs.blueDigital.jobImg"
       :jobGif="jobs.blueDigital.jobGif"
@@ -67,8 +81,30 @@ export default {
   data() {
     return {
       jobs: {
+        shifta: {
+          title: "SHIFTA",
+          position: "Software Engineer Ssr",
+          subtitle: "Oct 2022 - Currently",
+          jobImg: "/experience/shifta/shifta.png",
+          jobGif: "/experience/Shifta/shiftaGif.gif",
+          text: "Shifta creates great products and wonderful experiences by using innovative and emerging technologies. We combine the latest architectural standards, open source technologies and various business platforms with our proven expertise in delivering high quality software.",
+          additionalText: "In my role, I'm developing a HubSpot API integration with .NET",
+          tasks: {
+            // task1: "",
+            // task2: "",
+            // task3: "",
+            // task4: "",
+            // task5: "",
+            // task6: "",
+            // task7: "",
+            // task8: "",
+            // task9: "",
+          },
+          site: "https://www.weareshifters.com/en/",
+        },
         macena: {
           title: "Macena",
+          position: "Full Stack Developer",
           subtitle: "Nov 2021 - Sep 2022",
           jobImg: "/experience/macena/macenaWorks.png",
           jobGif: "/experience/macena/macenaGif.gif",
@@ -90,6 +126,7 @@ export default {
         },
         blueDigital: {
           title: "Blue Digital",
+          position: "WordPress Designer",
           subtitle: "Abr 2021 - Jul 2021",
           jobImg: "/experience/blueDigital/logo.png",
           jobGif: "/experience/blueDigital/bd.gif",

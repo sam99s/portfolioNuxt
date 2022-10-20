@@ -2,6 +2,7 @@
   <v-row class="mb-8">
     <v-col cols="12">
       <h3>{{ title }}</h3>
+      <h4>{{ position }}</h4>
       <span>{{ subtitle }}</span>
     </v-col>
     <v-col cols="12" sm="6" align-self="center">
@@ -69,6 +70,10 @@ export default {
       type: String,
       required: true,
     },
+    position: {
+      type: String,
+      required: true,
+    },
     subtitle: {
       type: String,
       required: true,
@@ -113,5 +118,10 @@ export default {
 <style scoped>
 a {
   text-decoration: none;
+}
+
+h4{
+  color: var(--secondary);
+  font-size: 100%;
 }
 </style>

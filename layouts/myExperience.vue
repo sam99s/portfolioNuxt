@@ -85,7 +85,7 @@ export default {
           title: "SHIFTA",
           position: "Software Engineer Ssr",
           subtitle: "Oct 2022 - Currently",
-          jobImg: "/experience/shifta/shifta.png",
+          jobImg: "/experience/Shifta/shifta.png",
           jobGif: "/experience/Shifta/shiftaGif.gif",
           text: "Shifta creates great products and wonderful experiences by using innovative and emerging technologies. We combine the latest architectural standards, open source technologies and various business platforms with our proven expertise in delivering high quality software.",
           additionalText: "In my role, I'm developing a HubSpot API integration with .NET",

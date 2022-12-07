@@ -44,15 +44,21 @@
           v-if="isHome"
         />
       </v-col>
+      
+      <v-spacer></v-spacer>
 
-      <v-col cols="12" sm="6" contain>
-        <CardImage
-          :mainImage="studies.databases.image"
-          :title="studies.databases.title"
-          :subtitle="studies.databases.subtitle"
-          :text="studies.databases.text"
-          v-if="isHome"
-        />
+      <v-col cols="12" sm="4" contain>
+        <v-card>
+            <v-img
+              :src="studies.dotnet.achievement"
+              height="auto"
+              class="grey darken-4"
+              ali
+            ></v-img>
+            <v-card-title class="text-h6 d-flex justify-center">
+              Achievement
+            </v-card-title>
+          </v-card>
       </v-col>
 
       <v-col cols="12" class="text-center" v-if="isHome">
@@ -91,6 +97,7 @@ export default {
           subtitle: "Platzi 2022",
           text: "Efficient framework, created by Microsoft, for modern software development with languages ​​like C# based on the Object Orientation paradigm.",
           image: "/studies/dotnet/principal.png",
+          achievement: "/studies/dotnet/diplomaDotNet.png",
         },
         nuxt: {
           title: "NUXT JS",

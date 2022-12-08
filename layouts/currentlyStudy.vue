@@ -24,8 +24,23 @@
             <StudieProgressBar
               :valueProp="averageProgress"
               :title="`${title} progress`"
-              :colorProp='"#8e33a1"'
+              :colorProp="'#8e33a1'"
             />
+          </v-col>
+        </v-row>
+        <v-row v-if="achievement">
+          <v-col cols="12">
+            <v-card>
+            <v-img
+              :src="achievement"
+              height="auto"
+              class="grey darken-4"
+              ali
+            ></v-img>
+            <v-card-title class="text-h6 d-flex justify-center">
+              Achievement
+            </v-card-title>
+          </v-card>
           </v-col>
         </v-row>
       </v-container>
@@ -63,6 +78,11 @@ export default {
     text2: {
       type: String,
       required: true,
+    },
+    achievement:{
+      type: String,
+      default: "/studies/dotnet/diplomaDotNet.png",
+      required: false,
     },
     headers: {
       type: Array,

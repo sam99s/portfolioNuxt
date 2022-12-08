@@ -60,15 +60,15 @@ export default {
           subject: ".NET Developer",
           institution: "Platzi",
           since: "2022",
-          until: "2023",
+          until: "2022",
           priorKnowledge: true,
-          currentlyState: "Studying",
+          currentlyState: "completed",
           objetive: "Sr. dev",
         },
         {
-          subject: "SQL",
+          subject: "Azure",
           institution: "Platzi",
-          since: "2022",
+          since: "2023",
           until: "2023",
           priorKnowledge: true,
           currentlyState: "Studying",
@@ -156,6 +156,11 @@ export default {
           frequency: "Always",
         },
         {
+          subject: ".NET",
+          year: 2022,
+          frequency: "Always",
+        },
+        {
           subject: "SQL",
           year: 2022,
           frequency: "Usually",
@@ -169,19 +174,7 @@ export default {
       wantItems: [
         {
           subject: "Software Engineering",
-          between: "2023-2030",
-        },
-        {
-          subject: "NEXT JS",
-          between: "2023-2024",
-        },
-        {
-          subject: "React Native",
-          between: "2023-2024",
-        },
-        {
-          subject: "Flutter",
-          between: "2025-2026",
+          between: "2024-2030",
         },
       ],
     };

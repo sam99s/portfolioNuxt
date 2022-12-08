@@ -144,6 +144,7 @@
         :headers="studies.dotnet.headers"
         :items="studies.dotnet.items"
         :institution="studies.dotnet.institution"
+        :archivement="studies.dotnet.archivement"
       />
 
       <v-row class="my-5 pt-5">
@@ -318,6 +319,7 @@ export default {
             "My main study path is focused on backend development. More precisely, it is about development in .NET with the C# language.",
           text2:
             "I decided to take this route in Platzi, to be more practical in my work with the technologies used and mainly, because of the power that this framework has.",
+          archivement: "",
           headers: [
             {
               text: "Courses",
@@ -444,6 +446,14 @@ export default {
               link: "/skills/dotnet/apiWithNet.png",
             },
             {
+              title: "LINQ",
+              studying: false,
+              approved: true,
+              since: "12/2022",
+              until: "12/2022",
+              link: "/skills/dotnet/linq.png",
+            },
+            {
               title: "ASP.NET CORE",
               studying: false,
               approved: true,
@@ -453,27 +463,27 @@ export default {
             },
             {
               title: "Web development with Blazor and .NET",
-              studying: true,
-              approved: false,
-              since: "09/2022",
-              until: "10/2022",
-              link: "",
+              studying: false,
+              approved: true,
+              since: "10/2022",
+              until: "11/2022",
+              link: "/skills/dotnet/blazor.png",
             },
             {
               title: "Web Apps & Logic Apps in Azure",
               studying: false,
-              approved: false,
-              since: "10/2022",
-              until: "10/2022",
-              link: "",
+              approved: true,
+              since: "11/2022",
+              until: "11/2022",
+              link: "/skills/dotnet/webApps.png",
             },
             {
               title: "Azure Devops: CI/CD Flows",
               studying: false,
-              approved: false,
-              since: "10/2022",
-              until: "10/2022",
-              link: "",
+              approved: true,
+              since: "11/2022",
+              until: "12/2022",
+              link: "/skills/dotnet/azureDevops.png",
             },
           ],
           institution: {

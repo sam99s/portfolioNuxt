@@ -45,9 +45,9 @@
         />
       </v-col>
       
-      <v-spacer></v-spacer>
+      <v-spacer v-if="isHome"></v-spacer>
 
-      <v-col cols="12" sm="4" contain>
+      <v-col cols="12" sm="4" contain v-if="isHome">
         <v-card>
             <v-img
               :src="studies.dotnet.achievement"

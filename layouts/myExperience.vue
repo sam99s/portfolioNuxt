@@ -11,6 +11,18 @@
         </p>
       </v-col>
     </v-row>
+    <!-- Lubee -->
+    <Jobs
+      :title="jobs.lubee.title"
+      :position="jobs.lubee.position"
+      :subtitle="jobs.lubee.subtitle"
+      :jobImg="jobs.lubee.jobImg"
+      :jobGif="jobs.lubee.jobGif"
+      :text="jobs.lubee.text"
+      :additionalText="jobs.lubee.additionalText"
+      :tasks="jobs.lubee.tasks"
+      :site="jobs.lubee.site"
+    />
     <!-- Shifta -->
     <Jobs
       :title="jobs.shifta.title"
@@ -81,6 +93,28 @@ export default {
   data() {
     return {
       jobs: {
+        lubee: {
+          title: "LUBEE",
+          position: "Full Stack Developer",
+          subtitle: "Feb 2023 - Currently",
+          jobImg: "/experience/Lubee/Lubee.png",
+          jobGif: "/experience/Lubee/LubeeGif.gif",
+          text: "In Lubee, we build software solutions and applications with quality and speed. The use of technology allows to have control of what happens, secure, consolidated and consistent information to make intelligent decisions in real time.",
+          additionalText:
+            "In my role, I perform a multitasking role in more than 3 projects in parallel. Within these I use tools such as .NET 6.0, WPF, WooCommerce, Vue.js, MySQL, SQL Server, among others.",
+          tasks: {
+            task1: "Troubleshoot local to remote sales synchronization",
+            task2: "Desktop application developer with .net",
+            task3: "Database builder with mysql",
+            task4: "WooCommerce Management",
+            task5: "Development and maintenance of API's",
+            task6: "Front End Development with Vue.js, piaf & Bootstrap-vue",
+            task7: "Management of databases php admin, SQL server and MySQL",
+            task8: "Create stored procedures",
+            task9: "Creating image compression with JavaScript",
+          },
+          site: "https://lubee.com.ar/",
+        },
         shifta: {
           title: "SHIFTA",
           position: "Software Engineer Ssr",
@@ -88,7 +122,8 @@ export default {
           jobImg: "/experience/Shifta/shifta.png",
           jobGif: "/experience/Shifta/shiftaGif.gif",
           text: "Shifta creates great products and wonderful experiences by using innovative and emerging technologies. We combine the latest architectural standards, open source technologies and various business platforms with our proven expertise in delivering high quality software.",
-          additionalText: "In my role, I developed a short API integration of HubSpot and Tiendanube with .NET",
+          additionalText:
+            "In my role, I developed a short API integration of HubSpot and Tiendanube with .NET",
           tasks: {
             // task1: "",
             // task2: "",

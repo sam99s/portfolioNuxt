@@ -66,22 +66,13 @@ export default {
           objetive: "Sr. dev",
         },
         {
-          subject: "Azure",
+          subject: "School of Data Science and Artificial Intelligence",
           institution: "Platzi",
           since: "2023",
-          until: "2023",
+          until: "2024",
           priorKnowledge: true,
-          currentlyState: "Studying",
-          objetive: "Others",
-        },
-        {
-          subject: "English",
-          institution: "Platzi",
-          since: "2022",
-          until: "2023",
-          priorKnowledge: true,
-          currentlyState: "Studying",
-          objetive: "IELTS",
+          currentlyState: "In Progress",
+          objetive: "Data Engineer",
         },
       ],
       previousItems: [
@@ -168,6 +159,16 @@ export default {
         {
           subject: "Postman",
           year: 2022,
+          frequency: "Usually",
+        },
+        {
+          subject: "MySQL",
+          year: 2023,
+          frequency: "Always",
+        },
+        {
+          subject: "Bootstrap-vue",
+          year: 2023,
           frequency: "Usually",
         },
       ],
